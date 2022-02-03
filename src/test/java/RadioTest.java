@@ -36,7 +36,7 @@ public class RadioTest {
         assertEquals(expected,actual);
     }
     @Test
-    public void p(){
+    public void notValidStation(){
         Radio rad = new Radio();
         rad.setChangeStation(10);
         int expected = 0;
@@ -44,7 +44,7 @@ public class RadioTest {
         assertEquals(expected,actual);
     }
     @Test
-    public void pre(){
+    public void validStation(){
         Radio rad = new Radio();
         rad.setChangeStation(7);
         int expected = 7;
