@@ -36,6 +36,14 @@ public class Radio {
             next();
         }
     }
+    public void setChangeStation(int newNumberStation){
+        if (newNumberStation>9){
+            return;
+        }
+        if (newNumberStation<9){
+            numberStation = newNumberStation;
+        }
+    }
 
     public int getNumberStation() {
         return numberStation;

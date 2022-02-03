@@ -36,6 +36,22 @@ public class RadioTest {
         assertEquals(expected,actual);
     }
     @Test
+    public void p(){
+        Radio rad = new Radio();
+        rad.setChangeStation(10);
+        int expected = 0;
+        int actual = rad.getNumberStation();
+        assertEquals(expected,actual);
+    }
+    @Test
+    public void pre(){
+        Radio rad = new Radio();
+        rad.setChangeStation(7);
+        int expected = 7;
+        int actual = rad.getNumberStation();
+        assertEquals(expected,actual);
+    }
+    @Test
     public void plusCurrentVolume(){
         Radio rad = new Radio();
         rad.setVolume(10);
