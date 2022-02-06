@@ -19,15 +19,13 @@ public class Radio {
         }
     }
 
-    public int prev() {
-        int prev;
-        prev = 9;
-        return prev;
+    public void prev() {
+        numberStation = 9;
     }
 
     public void setPrevNumberStation(int newNumberStation) {
         if (newNumberStation <= 0) {
-            numberStation = newNumberStation + prev();
+            prev();
         }
         if (newNumberStation > 0) {
             numberStation = newNumberStation;
