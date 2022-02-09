@@ -3,10 +3,10 @@ public class Radio {
     private int numberStation;
 
     public void next() {
-            numberStation = numberStation + 1;
-            if (numberStation>9){
-                numberStation = 0;
-            }
+        numberStation = numberStation + 1;
+        if (numberStation > 9) {
+            numberStation = 0;
+        }
     }
 
 
@@ -22,10 +22,10 @@ public class Radio {
     }
 
     public void prev() {
-        if (numberStation>0) {
+        if (numberStation > 0) {
             numberStation = numberStation - 1;
         }
-        if (numberStation==0){
+        if (numberStation == 0) {
             numberStation = 9;
         }
     }
