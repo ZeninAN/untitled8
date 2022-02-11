@@ -4,6 +4,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class RadioTest {
     @Test
+    public void allStation(){
+        Radio rad = new Radio(10);
+        assertEquals(10,rad.getAllNumberStation());
+    }
+    @Test
     public void nextNineNumberStation() {
         Radio rad = new Radio();
         rad.setNumberStation(9);
@@ -60,8 +65,8 @@ public class RadioTest {
     @Test
     public void plusCurrentVolume() {
         Radio rad = new Radio();
-        rad.setVolume(10);
-        int expected = 10;
+        rad.setVolume(100);
+        int expected = 100;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
@@ -69,8 +74,8 @@ public class RadioTest {
     @Test
     public void plusCurrentVolume2() {
         Radio rad = new Radio();
-        rad.setVolume(7);
-        int expected = 8;
+        rad.setVolume(70);
+        int expected = 71;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
@@ -87,8 +92,8 @@ public class RadioTest {
     @Test
     public void minusCurrentVolume2() {
         Radio rad = new Radio();
-        rad.setReductionVolume(6);
-        int expected = 5;
+        rad.setReductionVolume(61);
+        int expected = 60;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
