@@ -39,7 +39,7 @@ public class RadioTest {
     public void prevNumberStation2() {
         Radio rad = new Radio();
         rad.setPrevNumberStation(2);
-        int expected = 3;
+        int expected = 1;
         int actual = rad.getNumberStation();
         assertEquals(expected, actual);
     }
