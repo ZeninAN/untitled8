@@ -33,7 +33,12 @@ public class Radio {
     }
 
     public void prev() {
-        numberStation = 9;
+        if (numberStation > 0) {
+            numberStation = numberStation - 1;
+        }
+        if (numberStation == 0) {
+            numberStation = 9;
+        }
     }
 
     public void setPrevNumberStation(int newNumberStation) {
@@ -42,7 +47,7 @@ public class Radio {
         }
         if (newNumberStation > 0) {
             numberStation = newNumberStation;
-            next();
+            prev();
         }
     }
 
