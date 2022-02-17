@@ -4,10 +4,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class RadioTest {
     @Test
-    public void allStation(){
+    public void allStation() {
         Radio rad = new Radio(10);
-        assertEquals(10,rad.getAllNumberStation());
+        assertEquals(10, rad.getAllNumberStation());
     }
+
     @Test
     public void numberStation() {
         Radio rad = new Radio();
