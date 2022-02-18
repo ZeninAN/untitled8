@@ -47,8 +47,8 @@ public class Radio {
     }
 
     public void setIncreaseVolume() {
-        if (currentVolume > 9) {
-            currentVolume = 10;
+        if (currentVolume > 99) {
+            currentVolume = 100;
         } else {
             setVolume(currentVolume = currentVolume + 1);
         }
@@ -58,8 +58,8 @@ public class Radio {
         if (currentVolume < 0) {
             currentVolume = 0;
         }
-        if (currentVolume > 10) {
-            currentVolume = 10;
+        if (currentVolume > 100) {
+            currentVolume = 100;
         }
         this.currentVolume = currentVolume;
     }

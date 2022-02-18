@@ -97,8 +97,8 @@ public class RadioTest {
     @Test
     public void currentVolume2() {
         Radio rad = new Radio();
-        rad.setVolume(10);
-        int expected = 10;
+        rad.setVolume(100);
+        int expected = 100;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
@@ -106,8 +106,8 @@ public class RadioTest {
     @Test
     public void currentVolume3() {
         Radio rad = new Radio();
-        rad.setVolume(11);
-        int expected = 10;
+        rad.setVolume(102);
+        int expected = 100;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
@@ -124,9 +124,9 @@ public class RadioTest {
     @Test
     public void increaseVolume() {
         Radio rad = new Radio();
-        rad.setVolume(11);
+        rad.setVolume(101);
         rad.setIncreaseVolume();
-        int expected = 10;
+        int expected = 100;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
@@ -134,9 +134,9 @@ public class RadioTest {
     @Test
     public void increaseVolume2() {
         Radio rad = new Radio();
-        rad.setVolume(5);
+        rad.setVolume(59);
         rad.setIncreaseVolume();
-        int expected = 6;
+        int expected = 60;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
@@ -154,9 +154,9 @@ public class RadioTest {
     @Test
     public void redactionVolume2() {
         Radio rad = new Radio();
-        rad.setVolume(5);
+        rad.setVolume(50);
         rad.setReductionVolume();
-        int expected = 4;
+        int expected = 49;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
