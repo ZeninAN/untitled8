@@ -1,7 +1,7 @@
 public class Radio {
     private int currentVolume;
     private int numberStation;
-    private int allNumberStation;
+    private int allNumberStation = 10;
 
     public Radio() {
     }
@@ -24,7 +24,7 @@ public class Radio {
 
 
     public void setNumberStation(int numberStation) {
-        if (numberStation > 9) {
+        if (numberStation >= allNumberStation) {
             return;
         }
         if (numberStation < 0) {
@@ -33,10 +33,9 @@ public class Radio {
         this.numberStation = numberStation;
     }
 
-
     public void setPrev() {
         if (numberStation == 0) {
-            numberStation = 9;
+            numberStation = (allNumberStation - 1);
         } else {
             setNumberStation(numberStation - 1);
         }

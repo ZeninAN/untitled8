@@ -8,7 +8,7 @@ public class RadioTest {
         Radio rad = new Radio(20);
         rad.setNumberStation(0);
         rad.setPrev();
-        assertEquals(20, rad.getAllNumberStation());
+        assertEquals(19, rad.getNumberStation());
     }
 
     @Test
